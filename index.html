@@ -12,11 +12,32 @@
   </head>
   <body>
     <h1>Forms</h1>
-    <form>
+    <form autocomplete="off" action="/contact.html">
       <label for="user">Username</label>
-      <input type="text" id="user" />
+      <input
+        minlength="5"
+        maxlength="12"
+        placeholder="Enter Username"
+        name="user"
+        type="text"
+        id="user"
+        required
+      />
       <label>Email</label>
-      <input type="email" />
+      <input
+        minlength="4"
+        placeholder="Enter Email"
+        maxlength="14"
+        name="email"
+        type="email"
+        required
+      />
+      <select name="products" id="product">
+        <option value=""></option>
+        <option value="macbook 2018">Macbook</option>
+        <option value="iphone 11">Iphone</option>
+      </select>
+      <textarea name="message" id="" cols="30" rows="10"></textarea>
       <button type="submit">Submit</button>
     </form>
   </body>
