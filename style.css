@@ -6,15 +6,34 @@
 html {
   font-size: 62.5%;
 }
-img {
-  height: 20rem;
-  width: 10rem;
+html,
+body {
+  height: 100%;
 }
-a {
-  display: inline-block;
-  height: 20rem;
-  width: 20rem;
-  margin: 2rem;
-  padding: 2rem;
-  background: grey;
+.container {
+  background: blue;
+  width: 80%;
+  height: 50%;
+  margin: auto;
+}
+.box1,
+.box2,
+.box3 {
+  width: 20%;
+  height: 20%;
+  background: red;
+}
+.box2 {
+  background: green;
+  transform: translateX(50%);
+}
+.box3 {
+  background: yellow;
+}
+.box1 {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+  transform: translateY(-50%);
 }
