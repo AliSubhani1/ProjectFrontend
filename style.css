@@ -6,9 +6,9 @@
 html {
   font-size: 62.5%;
 }
-button {
-  padding: 2rem 4rem;
+h1::after {
+  content: "me";
 }
-button:nth-child(2) {
-  padding: 50px;
+h1::before {
+  content: "Mee";
 }
