@@ -11,8 +11,10 @@ img {
   width: 10rem;
 }
 a {
-  display: block;
+  display: inline-block;
+  height: 20rem;
+  width: 20rem;
+  margin: 2rem;
+  padding: 2rem;
   background: grey;
-  height: 3rem;
-  text-align: center;
 }
