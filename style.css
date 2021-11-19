@@ -1,6 +1,4 @@
-.header {
-  color: green;
-}
-h1 {
-  color: yellow;
+button {
+  padding: 50px 20px 10px 5px;
+  background-color: blue;
 }
