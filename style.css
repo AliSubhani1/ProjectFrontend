@@ -6,35 +6,15 @@
 html {
   font-size: 62.5%;
 }
-html,
-body {
-  height: 300%;
+button {
+  padding: 2rem 4rem;
 }
-.container {
-  background: blue;
-  width: 80%;
-  height: 50%;
-  margin: auto;
+button:hover {
+  background: purple;
 }
-.box1,
-.box2,
-.box3 {
-  width: 20%;
-  height: 20%;
-  background: red;
-}
-.box2 {
+button:focus {
   background: green;
-  position: relative;
-  left: 10px;
 }
-.box3 {
+input:focus {
   background: yellow;
-  position: sticky;
-  top: 0%;
-}
-.box1 {
-  position: absolute;
-  bottom: 0%;
-  right: 0%;
 }
