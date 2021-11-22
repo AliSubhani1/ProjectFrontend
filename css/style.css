@@ -1,0 +1,15 @@
+li:nth-child(2n + 1) {
+  background: red;
+}
+span:first-of-type {
+  background: green;
+}
+li:last-of-type {
+  background: yellow;
+}
+li:not(.green) {
+  background: blue;
+}
+[data-red$="34"] {
+  background: green;
+}
