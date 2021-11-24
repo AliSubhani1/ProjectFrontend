@@ -1,9 +1,13 @@
-let bill = 275;
+"use strict";
 
-let tip = 0;
+const calcAge3 = (result) => 2021 - birthYear;
+let birthYear = 1994;
+const age = calcAge3(birthYear);
+console.log(age);
 
-bill >= 50 && bill <= 300 ? (tip = 0.15 * bill) : (tip = 0.2 * bill);
-let totalAmount = bill + tip;
-console.log(
-  `The bill was (${bill}), the tip was (${tip}) and the total value was (${totalAmount})`
-);
+const yearsUntillRetirement = (birth) => {
+  const age = 2021 - birth;
+  let retirementYears = 65 - age;
+  return retirementYears;
+};
+console.log(yearsUntillRetirement(1994));
