@@ -1,18 +1,9 @@
-let ScoreDolphinA = 96;
-let ScoreDolphinB = 108;
-let ScoreDolphinC = 89;
-let ScoreKoalasA = 88;
-let ScoreKoalasB = 91;
-let ScoreKoalasC = 110;
+let bill = 275;
 
-let dolphinAvg = (ScoreDolphinA + ScoreDolphinB + ScoreDolphinC) / 3;
-let KoalasAvg = (ScoreKoalasA + ScoreKoalasB + ScoreKoalasC) / 3;
-if (dolphinAvg === KoalasAvg && dolphinAvg > 100) {
-  console.log("It is a draw");
-} else if (dolphinAvg > KoalasAvg && dolphinAvg > 100) {
-  console.log("Dolphin is winner");
-} else if (KoalasAvg > dolphinAvg && KoalasAvg > 100) {
-  console.log("Koalas is winner.");
-} else {
-  console.log("score is less than 100");
-}
+let tip = 0;
+
+bill >= 50 && bill <= 300 ? (tip = 0.15 * bill) : (tip = 0.2 * bill);
+let totalAmount = bill + tip;
+console.log(
+  `The bill was (${bill}), the tip was (${tip}) and the total value was (${totalAmount})`
+);
