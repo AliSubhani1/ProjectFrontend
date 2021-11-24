@@ -1,0 +1,225 @@
+.main-menu {
+  background: rgb(130, 22, 37);
+  position: sticky;
+  top: 0;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin: 0;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100vw;
+  z-index: 1;
+}
+html {
+  scroll-behavior: smooth;
+  width: 100vw;
+}
+
+.main-menu > a {
+  margin-right: 2rem;
+  font-size: 1.4rem;
+  color: white;
+  text-decoration: none;
+}
+
+.main-menu > :hover {
+  color: rgb(191, 195, 201);
+  transition: 0.5s all;
+}
+
+h1,
+h2,
+h3,
+nav {
+  font-family: "Lato", sans-serif;
+}
+p,
+li,
+button,
+footer {
+  font-family: "Roboto", sans-serif;
+}
+#welcome-section {
+  background-color: rgb(99, 98, 97);
+  width: 100vw;
+}
+
+.header-text {
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-self: center;
+  align-content: center;
+  animation-name: textTransition;
+  animation-duration: 4s;
+}
+.welcome-heading-tagline {
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.welcome-heading-tagline {
+  color: rgb(130, 22, 37);
+  font-size: 1.5rem;
+  font-style: italic;
+}
+@keyframes textTransition {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#projects {
+  background-color: rgb(83, 121, 181);
+  padding-top: 10px;
+  width: 100vw;
+}
+
+#projects > h1 {
+  text-align: center;
+  color: white;
+  text-decoration: underline;
+  text-underline-position: under;
+  text-underline-offset: 5px;
+}
+/* .project-title {
+} */
+img {
+  width: 450px;
+  height: 500px;
+}
+.project-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.button-wrapper {
+  text-align: center;
+  background-color: rgb(83, 121, 181);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+  padding-top: 20px;
+}
+.button-show-all {
+  /* position: absolute; */
+  background-color: rgb(99, 98, 97);
+  color: white;
+  height: 50px;
+  width: 200px;
+  font-size: 1.3rem;
+  transition: all 1.5s;
+}
+.button-show-all:hover {
+  background-color: rgb(130, 22, 37);
+  height: 70px;
+  width: 220px;
+}
+.project-title {
+  text-decoration: none;
+  background-color: rgb(99, 98, 97);
+  margin-bottom: 40px;
+  color: white;
+  transition: all 1s;
+  position: relative;
+}
+.project-title:hover {
+  background-color: rgb(130, 22, 37);
+  bottom: -20px;
+}
+#projects-heading {
+  animation-name: textTransition;
+  animation-duration: 4s;
+}
+.website-footer {
+  bottom: 0;
+  border-top: 10px solid rgb(130, 22, 37);
+  padding-bottom: 40px;
+  padding-top: 40px;
+  background-color: rgb(54, 53, 52);
+  color: white;
+  text-align: center;
+  width: 100vw;
+  margin-bottom: 0;
+}
+.banner-work-together {
+  height: 100vh;
+  width: 100vw;
+  padding-top: 10px;
+  background-color: rgb(99, 98, 97);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-self: center;
+  align-content: center;
+  animation-name: textTransition;
+  animation-duration: 4s;
+}
+.text-work-together {
+  font-size: 4rem;
+}
+.banner-work-together > p {
+  font-size: 1.5rem;
+}
+
+.buttons-social-media > a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  padding: 20px;
+}
+.contact-us {
+  transition: all 2s;
+}
+.buttons-social-media > a:hover {
+  top: 10px; /* not working */
+  color: red;
+  font-size: 1.4rem;
+}
+@media (max-width: 800px) {
+  .text-work-together {
+    font-size: 2rem;
+  }
+  .buttons-social-media > a {
+    padding: 10px;
+  }
+}
+#header-image {
+  width: 80vw;
+  height: 100vh;
+}
+.project-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.main-project-body {
+  background: #eee;
+}
+.Borlaug-Project-details > h2 {
+  text-align: center;
+}
+.Borlaug-quote {
+  font-style: italic;
+}
+.Borlaug-wiki-details {
+  text-align: center;
+}
