@@ -16,6 +16,10 @@ html {
   scroll-behavior: smooth;
   width: 100vw;
 }
+body {
+  margin: 0;
+  padding: 0;
+}
 
 .main-menu > a {
   margin-right: 2rem;
