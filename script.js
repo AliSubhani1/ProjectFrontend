@@ -1,29 +1,28 @@
-Mark = {
-  firstName: "Mark",
-  lastName: "Miller",
-  mass: 78,
-  height: 1.69,
-  calcBmi: function () {
-    this.BMI = this.mass / this.height ** 2;
-    return this.BMI;
-  },
-};
-John = {
-  firstName: "John",
-  lastName: "Smith",
-  mass: 92,
-  height: 1.95,
-  calcBmi: function () {
-    this.BMI = this.mass / this.height ** 2;
-    return this.BMI;
-  },
-};
-higherBmi = (johnsBmi, marksBmi) => {
-  if (johnsBmi > marksBmi) {
-    console.log(`John's BMI (${johnsBmi}) is higher than Mark's (${marksBmi})`);
-  } else {
-    console.log(`Marks BMI(${marksBmi}) is higher than John's (${johnsBmi})`);
-  }
-};
+const jonas = [
+  "Jonas",
+  "schmedtmann",
+  2037 - 1991,
+  "teacher",
+  ["Micheal", "Peter", "Steven"],
+  true,
+];
+const types = [];
+for (let i = 0; i < jonas.length; i++) {
+  console.log(jonas[i], typeof jonas[i]);
+  types[i] = typeof jonas[i];
+}
+console.log(types);
 
-higherBmi(John.calcBmi(), Mark.calcBmi());
+console.log("----ONLY STRINGS------");
+
+for (let i = 0; i < jonas.length; i++) {
+  if (typeof jonas[i] !== "string") continue;
+  console.log(jonas[i], typeof jonas[i]);
+}
+
+console.log("----BREAK WITH NUMBER------");
+
+for (let i = 0; i < jonas.length; i++) {
+  if (typeof jonas[i] == "number") break;
+  console.log(jonas[i], typeof jonas[i]);
+}
