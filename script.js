@@ -1,14 +1,29 @@
-const bills = [125, 555, 44];
-calculateTips = (bills) => {
-  let tips = [];
-  for (i = 0; i < bills.length; i++) {
-    if (bills[i] >= 50 && bills[i] <= 300) {
-      tips.push(bills[i] * 0.15);
-    } else {
-      tips.push(bills[i] * 0.2);
-    }
+Mark = {
+  firstName: "Mark",
+  lastName: "Miller",
+  mass: 78,
+  height: 1.69,
+  calcBmi: function () {
+    this.BMI = this.mass / this.height ** 2;
+    return this.BMI;
+  },
+};
+John = {
+  firstName: "John",
+  lastName: "Smith",
+  mass: 92,
+  height: 1.95,
+  calcBmi: function () {
+    this.BMI = this.mass / this.height ** 2;
+    return this.BMI;
+  },
+};
+higherBmi = (johnsBmi, marksBmi) => {
+  if (johnsBmi > marksBmi) {
+    console.log(`John's BMI (${johnsBmi}) is higher than Mark's (${marksBmi})`);
+  } else {
+    console.log(`Marks BMI(${marksBmi}) is higher than John's (${johnsBmi})`);
   }
-  return tips;
 };
 
-console.log(calculateTips(bills));
+higherBmi(John.calcBmi(), Mark.calcBmi());
