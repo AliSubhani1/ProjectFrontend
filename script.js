@@ -1,26 +1,14 @@
-averageScore = (Score1, score2, score3) => (Score1 + score2 + score3) / 3;
-//Test 1
-DolphinsScore = averageScore(44, 23, 71);
-KoalasScore = averageScore(65, 54, 49);
-checkWinner = (DolphinAvgScore, KoalasAvgScore) => {
-  if (
-    DolphinAvgScore > KoalasAvgScore &&
-    DolphinAvgScore >= KoalasAvgScore * 2
-  ) {
-    console.log(`Dolphin wins (${DolphinAvgScore}) vs (${KoalasAvgScore})`);
-  } else if (
-    KoalasAvgScore > DolphinAvgScore &&
-    KoalasAvgScore >= DolphinAvgScore * 2
-  ) {
-    console.log(`Koalas wins (${KoalasAvgScore}) vs (${DolphinAvgScore})`);
-  } else {
-    console.log("no team wins");
+const bills = [125, 555, 44];
+calculateTips = (bills) => {
+  let tips = [];
+  for (i = 0; i < bills.length; i++) {
+    if (bills[i] >= 50 && bills[i] <= 300) {
+      tips.push(bills[i] * 0.15);
+    } else {
+      tips.push(bills[i] * 0.2);
+    }
   }
+  return tips;
 };
-checkWinner(DolphinsScore, KoalasScore);
-checkWinner(576, 111);
 
-//Test 2
-DolphinsScore = averageScore(85, 54, 41);
-KoalasScore = averageScore(23, 34, 27);
-checkWinner(DolphinsScore, KoalasScore);
+console.log(calculateTips(bills));
